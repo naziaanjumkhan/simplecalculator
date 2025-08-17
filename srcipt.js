@@ -7,6 +7,7 @@ let arr = Array.from(buttons);
 // yahan loop chalega
     arr.forEach(buttons=>{
         buttons.addEventListener("click", (e)=>{
+            e.preventDefault();
             const value = e.target.textContent;
             if(value == "="){
                 string = eval(string);   //calculate
